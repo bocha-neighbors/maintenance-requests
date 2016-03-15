@@ -1,0 +1,80 @@
+<!Doctype html>
+<head>
+  <link type = "text/css" rel = "stylesheet" href = "masalawareform.css"/>
+  <script type="text/javascript" src="http://code.jquery.com/jquery-2.2.1.min.js"></script>
+  <script type="text/javascript" src="masalaware.js"></script>
+</head>
+<body>
+<h1>MASALAWARE MAINTAINENCE REQUESTS</h1>
+
+<form id="target" name="htmlform" method="post" action="html_form_send.php">
+<table width="450px">
+</tr>
+
+<tr>
+ <td valign="top">
+  <label for="email">Email Address </label>
+ </td>
+ <td valign="top">
+  <input  type="text" name="email" maxlength="80" size="30"/>
+ </td>
+</tr>
+ 
+<tr>
+ <td valign="top">
+  <label for="location_in_house">Location of Disrepair in House </label>
+ </td>
+ <td valign="top">
+  <select>
+  <option value="bathroom">1st Floor Bathroom</option>
+  <option value="saab">Saab</option>
+  <option value="mercedes">Mercedes</option>
+  <option value="audi">Audi</option>
+</select> 
+  <input  type="text" name="location_in_house" maxlength="50" size="30"/>
+ </td>
+</tr>
+
+<tr>
+ <td valign="top">
+  <label for="description">Description of Problem </label>
+ </td>
+ <td valign="top">
+  <textarea  name="description" maxlength="1000" cols="25" rows="6"></textarea>
+ </td>
+ </tr>
+
+ <tr>
+ <td valign="top">
+  <label for="fix_it_yourself">Have you tried fixing this yet? </label>
+ </td>
+ <td valign="top">
+  <input  type="text" name="fix_it_yourself" maxlength="80" size="30"/>
+ </td>
+</tr>
+
+<tr>
+ <td valign="top">
+  <label for="research_description">Please share your research and details from your attempt at fixing this issue with your maintainenence people </label>
+ </td>
+ <td valign="top">
+  <textarea  name="research_description" maxlength="1000" cols="25" rows="6"></textarea>
+ </td>
+</tr>
+
+<tr>
+ <td valign="top">
+  <label for="urgency">Urgency 1(low)-5(highest)</label>
+ </td>
+ <td valign="top">
+  <input  type="text" name="urgency" maxlength="30" size="30"/>
+ </td>
+</tr>
+
+<tr>
+ <td colspan="2" style="text-align:center">
+  <input type="submit" value="Submit"/>   
+ </td>
+</tr>
+</table>
+</form>
